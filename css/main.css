@@ -22,14 +22,58 @@ header > div > img {
   height: 30px;
 }
 header span:nth-child(2) {
-  font-weight:500;
-  color:black;
+  font-weight: 500;
+  color: black;
 }
 header span:nth-child(3) {
-  color:#5552D9;
-  padding:10px;
-  border-radius:5px;
-  background-color:rgba(85, 82, 217,0.5);
+  color: #5552d9;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(85, 82, 217, 0.5);
+}
+main {
+  display: flex;
+  align-items: center;
+  padding: 30px 60px;
+}
+main > div:first-child {
+  height: 60vh;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+main > div:last-child {
+  height: 60vh;
+  width: 50%;
+}
+main > div:first-child > div:first-child {
+  width: 30px;
+  height: 100%;
+  background-color: rgba(217, 217, 217, 0.4);;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  gap:10px;
+}
+main > div:first-child > div:last-child {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > div:last-child form {
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  padding:0 30px;
+}
+main > div:last-child form > button {
+background-color: #4A3AFF;
+outline:none;
+border:none;
+padding: 5px 0px;
 }
 :root {
   --white: #fff;
@@ -44,4 +88,12 @@ header span:nth-child(3) {
   --blue-dark: #4953b8;
   --blue-twitter: #2aa9e0;
   --x: #757d8a;
+}
+.ball{
+  width:20px;
+  height:20px;
+  border-radius: 30px;
+  background-color: green;
+  text-align:center;
+  color:#ffff;
 }
